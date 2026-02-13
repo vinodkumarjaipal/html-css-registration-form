@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Registration Here</h1>
+    <p>This is a <span>registration form </span>for single person.</p>
+    <h2>🫵Like You😊</h2>
+<form action="#" method="post">
+   
+        
+    <label for="Fname" >First Name:</label>
+    <input type="text" id="Fname" name="Fname">
+        
+    <br>
+    <label for ="Lname">Last Name:</label>
+    <input type="text" id="Lname" name="Lname">
+<br>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter Password"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label for ="country">Select Country:</label>
+    <select name="country" id="country">
+        <option value="usa">USA</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="india">India</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="othher">Other</option>
+    </select>
+    <br>
+    <label for="province">Select province</label>
+    <input type="text" id="province" name="province" list="provinces"/>
+    <datalist id="provinces">
+        <option value="Sindh">Sindh</option>
+        <option value="Punjab">Punjab</option>
+        <option value="kpk">KPK</option>
+        <option value="Blochistan">Blochistan</option>
+    </datalist>
+    <br>
+
+    <label for ="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br>
+    
+    <label for ="phone">Phone Number</label>
+        <input 
+        type="tel" 
+        placeholder="03XXXXXXXXX" 
+        maxlength="11"
+        oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+        class="game"
+        required
+    ><br>
+    <label for="gender">Select Gender</label><br>
+    <label for="gender">Male</label>
+    <input type="radio" name="gender"  value="male">
+    <label for="gender">Female</label>
+    <input type="radio" name="gender"  value="female"><br>
+   
+
+    <label for="hobbies">Fav Hobbies</label><br>
+    <input type ="checkbox" name="interest" value="music"/>Music
+    <input type="checkbox" name="interest" value="sport"/>Sport
+<br>
+
+<label for="file" >Select File</label>
+<input type="file"  name="upload file" />
+<br>
+
+ <label for="submit">Click Submit</label><br>
+    <button>SUBMIT</button><br>
+    <label for ="message">Message Us</label><br>
+    <textarea name="" id="textarea" cols="14" rows="3" class="game"></textarea><br>
+    <input type="button" value="SUBMIT">
+
+
+
+</form>
+</body>
+</html>
